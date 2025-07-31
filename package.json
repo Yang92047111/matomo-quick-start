@@ -1,0 +1,45 @@
+{
+  "name": "matomo-vue3-integration",
+  "version": "1.0.0",
+  "description": "A lightweight demo project showcasing Matomo analytics integration with Vue 3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose up --build",
+    "start": "docker-compose up",
+    "stop": "docker-compose down",
+    "clean": "docker-compose down -v --remove-orphans",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:test": "cd frontend && npm run test",
+    "frontend:coverage": "cd frontend && npm run coverage",
+    "setup": "cd frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/matomo-vue3-integration.git"
+  },
+  "keywords": [
+    "matomo",
+    "vue3",
+    "analytics",
+    "typescript",
+    "docker",
+    "privacy",
+    "self-hosted",
+    "tracking",
+    "spa",
+    "frontend"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/matomo-vue3-integration/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/matomo-vue3-integration#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
