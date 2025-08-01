@@ -50,7 +50,7 @@ export function trackPageView(customTitle?: string) {
 export function trackEvent(category: string, action: string, name?: string, value?: number) {
   if (!window._paq) return;
   
-  const eventData = ['trackEvent', category, action];
+  const eventData: (string | number)[] = ['trackEvent', category, action];
   if (name) eventData.push(name);
   if (value !== undefined) eventData.push(value);
   
@@ -60,7 +60,7 @@ export function trackEvent(category: string, action: string, name?: string, valu
 export function trackGoal(goalId: number, customRevenue?: number) {
   if (!window._paq) return;
   
-  const goalData = ['trackGoal', goalId];
+  const goalData: (string | number)[] = ['trackGoal', goalId];
   if (customRevenue !== undefined) goalData.push(customRevenue);
   
   window._paq.push(goalData);
