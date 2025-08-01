@@ -13,7 +13,7 @@ export default defineConfig({
     testTimeout: 10000,
     hookTimeout: 10000,
     coverage: {
-      provider: 'c8',
+      provider: 'v8',
       reporter: ['text', 'json', 'html']
     }
   }
